@@ -1,0 +1,41 @@
+$background-color:#2D93AD;
+$button-background:#4392F1;
+$white:#ffffff;
+
+
+.topbarnav {
+  background-color: $background-color;
+  .top-bar {
+    background-color: $background-color;
+    ul {
+      background-color: $background-color;
+    }
+
+    .menu {
+      .menu-text {
+        color: $white;
+        a {
+          color: $white;
+        }
+      }
+    }
+
+  }
+  .top-bar-right{
+    a{
+      color: $white;
+      display: block;
+    }
+  }
+
+}
+
+.content-area{
+h4{
+  color: #DC493A;
+}
+}
+.mainsection{
+  margin-top: 30px;
+}
+
