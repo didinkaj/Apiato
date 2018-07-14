@@ -40,6 +40,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/passport" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/socialite" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravelcollective/html" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/event" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/flysystem" />
@@ -173,6 +174,7 @@
           <root url="file://$MODULE_DIR$/vendor/laravel/passport" />
           <root url="file://$MODULE_DIR$/vendor/laravel/socialite" />
           <root url="file://$MODULE_DIR$/vendor/laravel/tinker" />
+          <root url="file://$MODULE_DIR$/vendor/laravelcollective/html" />
           <root url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
           <root url="file://$MODULE_DIR$/vendor/league/event" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
@@ -290,6 +292,7 @@
           <root url="file://$MODULE_DIR$/vendor/laravel/passport" />
           <root url="file://$MODULE_DIR$/vendor/laravel/socialite" />
           <root url="file://$MODULE_DIR$/vendor/laravel/tinker" />
+          <root url="file://$MODULE_DIR$/vendor/laravelcollective/html" />
           <root url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
           <root url="file://$MODULE_DIR$/vendor/league/event" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />

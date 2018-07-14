@@ -27,7 +27,7 @@ class Controller extends WebController
     public function index(GetAllBoardsRequest $request)
     {
         $boards = Apiato::call('Board@GetAllBoardsAction', [$request]);
-        return view('board::board-members',['boardmembers'=>$boards]);
+        return view('board::get-all-boards',['boardmembers'=>$boards]);
 
         // ..
     }
@@ -52,6 +52,8 @@ class Controller extends WebController
     public function create(CreateBoardRequest $request)
     {
         // ..
+        return view('board::create-board');
+
     }
 
     /**
@@ -61,9 +63,8 @@ class Controller extends WebController
      */
     public function store(StoreBoardRequest $request)
     {
-        $board = Apiato::call('Board@CreateBoardAction', [$request]);
-
-        // ..
+       $board = Apiato::call('Board@CreateBoardAction', [$request]);
+        return redirect()->route('web_board_index');
     }
 
     /**

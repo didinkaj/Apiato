@@ -162,7 +162,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Collective\Html\HtmlServiceProvider::class,
         /*
          * Application Service Providers...
          *
@@ -171,6 +171,7 @@ return [
          * NOTE: all packages service providers must be registered inside their container's main service providers.
          */
         Apiato\Core\Providers\ApiatoProvider::class,
+
     ],
 
     /*
@@ -219,6 +220,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
         // NOTE: all packages aliases must be registered inside their containers service providers
     ],
 

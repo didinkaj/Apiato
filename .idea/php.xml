@@ -117,6 +117,7 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
       <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

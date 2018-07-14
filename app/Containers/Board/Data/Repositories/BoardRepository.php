@@ -3,6 +3,7 @@
 namespace App\Containers\Board\Data\Repositories;
 
 use App\Ship\Parents\Repositories\Repository;
+use App\Containers\Board\Models\Board;
 
 /**
  * Class BoardRepository
@@ -17,5 +18,11 @@ class BoardRepository extends Repository
         'id' => '=',
         // ...
     ];
+   public function createMember($data){
 
-}
+      return parent::create($data);
+
+
+    }
+    }
+
