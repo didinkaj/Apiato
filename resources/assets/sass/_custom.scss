@@ -1,6 +1,7 @@
 $background-color:#2D93AD;
 $button-background:#4392F1;
 $white:#ffffff;
+$footerbackground:#4392F1;
 
 
 .topbarnav {
@@ -38,6 +39,22 @@ h4{
 }
 .mainsection{
   margin-top: 30px;
+  min-height: 670px;
 
 }
+.footer-section{
+  background-color: $background-color;
+  color:$white;
+  height: 50px;
+  padding: 10px;
+}
+.sidebar{
+  ul{
+    li{
+      a{
+        display: block;
+      }
+    }
+  }
 
+}

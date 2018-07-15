@@ -20,7 +20,7 @@ class CreateBoardTask extends Task
     public function run(array $data)
     {
         try {
-            return $this->repository->createMember($data);
+            return $this->repository->create($data);
         }
         catch (Exception $exception) {
             throw new CreateResourceFailedException();

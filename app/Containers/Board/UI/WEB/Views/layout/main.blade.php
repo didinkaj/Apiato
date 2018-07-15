@@ -10,9 +10,6 @@
 
     <title>{{ config('app.name', 'Board management system') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
@@ -28,7 +25,7 @@
 
 <!--start of page -->
     <div class="grid-container mainsection">
-        <div class="grid-x">
+        <div class="grid-x content-area">
             <!--sidebar  navigation -->
             <div class="cell medium-3">
                 @section('sidebar')
@@ -36,7 +33,13 @@
                 @show
             </div>
             <!-- content -->
-            <div class="cell medium-7 content-area medium-offset-1">
+            <div class="cell medium-7 medium-offset-1">
+                <ul class="breadcrumbs">
+                    <li><a href="{{route('web_board_index')}}">Boards</a></li>
+                    <li>
+                        <span class="show-for-sr">Current: </span> @yield('title')
+                    </li>
+                </ul>
                 @include('board::slots.error')
 
                     @yield('content')
@@ -48,9 +51,11 @@
 
 
 <!--footer -->
-<footer class="grid-container  ">
+<footer class="grid-container  fluid grid-margin-x footer-section">
     <div class="grid-x">
         <div class="cell text-center">
+            <!-- Scripts -->
+            <script src="{{ asset('js/app.js') }}" defer></script>
             @include('board::layout.includes.footer')
         </div>
     </div>

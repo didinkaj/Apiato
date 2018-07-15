@@ -18,11 +18,11 @@ class BoardRepository extends Repository
         'id' => '=',
         // ...
     ];
-   public function createMember($data){
 
-      return parent::create($data);
+    public function createMember($data)
+    {
 
-
+        return parent::create($data);
     }
-    }
+}
 

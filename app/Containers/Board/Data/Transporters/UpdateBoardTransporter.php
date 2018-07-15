@@ -13,12 +13,16 @@ class UpdateBoardTransporter extends Transporter
     protected $schema = [
         'type' => 'object',
         'properties' => [
+            'name',
+            'description'
             // enter all properties here
 
             // allow for undefined properties
             // 'additionalProperties' => true,
         ],
         'required'   => [
+            'name',
+            'description'
             // define the properties that MUST be set
         ],
         'default'    => [

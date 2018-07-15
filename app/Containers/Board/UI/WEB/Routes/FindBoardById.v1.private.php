@@ -1,10 +1,10 @@
 <?php
 
 /** @var Route $router */
-$router->get('home/{id}', [
+$router->get('board/{id}', [
     'as' => 'web_board_show',
     'uses'  => 'Controller@show',
-    'middleware' => [
+/*    'middleware' => [
       'auth:web',
-    ],
+    ],*/
 ]);

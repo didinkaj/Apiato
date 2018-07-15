@@ -27,7 +27,7 @@ class Controller extends WebController
     public function index(GetAllBoardsRequest $request)
     {
         $boards = Apiato::call('Board@GetAllBoardsAction', [$request]);
-        return view('board::get-all-boards',['boardmembers'=>$boards]);
+        return view('board::get-all-boards',['boards'=>$boards]);
 
         // ..
     }
@@ -40,6 +40,7 @@ class Controller extends WebController
     public function show(FindBoardByIdRequest $request)
     {
         $board = Apiato::call('Board@FindBoardByIdAction', [$request]);
+        return view('board::show-board',['board' => $board]);
 
         // ..
     }
@@ -74,7 +75,9 @@ class Controller extends WebController
      */
     public function edit(EditBoardRequest $request)
     {
-        $board = Apiato::call('Board@GetBoardByIdAction', [$request]);
+        $board = Apiato::call('Board@FindBoardByIdAction', [$request]);
+        return view('board::edit-board',['board' => $board]);
+
 
         // ..
     }
@@ -87,6 +90,7 @@ class Controller extends WebController
     public function update(UpdateBoardRequest $request)
     {
         $board = Apiato::call('Board@UpdateBoardAction', [$request]);
+        return view('board::show-board',['board' => $board]);
 
         // ..
     }
@@ -99,6 +103,7 @@ class Controller extends WebController
     public function delete(DeleteBoardRequest $request)
     {
          $result = Apiato::call('Board@DeleteBoardAction', [$request]);
+        return redirect()->route('web_board_index');
 
          // ..
     }

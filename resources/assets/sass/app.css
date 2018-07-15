@@ -9,10 +9,10 @@ Error: File to import not found or unreadable: node_modules/foundation-sites/scs
 14: // Foundation
 15: @import "node_modules/foundation-sites/scss/foundation";
 16: 
-17: // Include Everything (True) for the Flex Grid :);
-18: @include foundation-everything(true);
+17: @import "node_modules/font-awesome/scss/font-awesome.scss";
+18: 
 19: 
-20: @import "custom";
+20: // Include Everything (True) for the Flex Grid :);
 
 Backtrace:
 app.scss:15
@@ -58,4 +58,4 @@ app.scss:15
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: node_modules/foundation-sites/scss/foundation.\A         on line 15 of app.scss\A \A 10: // Settings\A 11: @import \"settings\";\A 12: \A 13: \A 14: // Foundation\A 15: @import \"node_modules/foundation-sites/scss/foundation\";\A 16: \A 17: // Include Everything (True) for the Flex Grid :);\A 18: @include foundation-everything(true);\A 19: \A 20: @import \"custom\";"; }
+  content: "Error: File to import not found or unreadable: node_modules/foundation-sites/scss/foundation.\A         on line 15 of app.scss\A \A 10: // Settings\A 11: @import \"settings\";\A 12: \A 13: \A 14: // Foundation\A 15: @import \"node_modules/foundation-sites/scss/foundation\";\A 16: \A 17: @import \"node_modules/font-awesome/scss/font-awesome.scss\";\A 18: \A 19: \A 20: // Include Everything (True) for the Flex Grid :);"; }

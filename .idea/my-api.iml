@@ -5,7 +5,6 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/apiato/containers-installer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/apiato/core" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/barryvdh/laravel-cors" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/barryvdh/laravel-debugbar" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cartalyst/collections" />
@@ -139,7 +138,6 @@
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/apiato/containers-installer" />
           <root url="file://$MODULE_DIR$/vendor/apiato/core" />
-          <root url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />
           <root url="file://$MODULE_DIR$/vendor/barryvdh/laravel-cors" />
           <root url="file://$MODULE_DIR$/vendor/barryvdh/laravel-debugbar" />
           <root url="file://$MODULE_DIR$/vendor/cartalyst/collections" />
@@ -257,7 +255,6 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/apiato/containers-installer" />
           <root url="file://$MODULE_DIR$/vendor/apiato/core" />
-          <root url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />
           <root url="file://$MODULE_DIR$/vendor/barryvdh/laravel-cors" />
           <root url="file://$MODULE_DIR$/vendor/barryvdh/laravel-debugbar" />
           <root url="file://$MODULE_DIR$/vendor/cartalyst/collections" />

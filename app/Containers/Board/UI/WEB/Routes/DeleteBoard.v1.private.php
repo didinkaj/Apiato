@@ -1,10 +1,10 @@
 <?php
 
 /** @var Route $router */
-$router->delete('home/{id}', [
+$router->delete('board/{id}/delete', [
     'as' => 'web_board_delete',
     'uses'  => 'Controller@delete',
-    'middleware' => [
+   /* 'middleware' => [
       'auth:web',
-    ],
+    ],*/
 ]);

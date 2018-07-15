@@ -1,10 +1,10 @@
 <?php
 
 /** @var Route $router */
-$router->get('home/{id}/edit', [
+$router->get('board/{id}/edit', [
     'as' => 'web_board_edit',
     'uses'  => 'Controller@edit',
-    'middleware' => [
+/*    'middleware' => [
       'auth:web',
-    ],
+    ],*/
 ]);

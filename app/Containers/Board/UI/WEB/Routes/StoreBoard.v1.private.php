@@ -1,10 +1,10 @@
 <?php
 
 /** @var Route $router */
-$router->post('home/store', [
+$router->post('board/store', [
     'as' => 'web_board_store',
     'uses'  => 'Controller@store',
-//    'middleware' => [
-//      'auth:web',
-//    ],
+/*    'middleware' => [
+      'auth:web',
+    ],*/
 ]);
