@@ -3,7 +3,15 @@
     Committee Details
 @endsection
 @section('content')
-    <h4>  Committee Details</h4>
+
+    <div class="grid-x">
+        <div class="medium-6">
+            <h5>  Committee Details</h5>
+        </div>
+        <div class="medium-6">
+            <a href="{{route('web_board_create')}}" class="button primary pull-right">Add Committee Member</a>
+        </div>
+    </div>
     @isset($committee)
         <table>
 

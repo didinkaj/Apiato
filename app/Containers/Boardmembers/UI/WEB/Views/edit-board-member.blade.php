@@ -3,7 +3,7 @@
     Edit Member
 @endsection
 @section('content')
-    <h4>Edit  Board Member </h4>
+    <h5>Edit  Board Member </h5>
     {!! Form::model($boardmember, array('method'=>'patch','route' => ['web_boardmembers_update',$boardmember->id])) !!}
     {{ Form::label('fname', 'First Name:') }}
     {{ Form::text('fname', null, array( 'class' => 'form-control', 'required' => '', 'maxlength' => '50'))   }}

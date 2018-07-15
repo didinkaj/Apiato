@@ -3,7 +3,7 @@
     Member Details
 @endsection
 @section('content')
-    <h4> Board Member Details</h4>
+    <h5> Board Member Details</h5>
     @isset($boardmember)
         <table>
 

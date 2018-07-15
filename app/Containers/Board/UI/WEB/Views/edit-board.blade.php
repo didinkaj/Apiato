@@ -6,7 +6,7 @@
     <nav aria-label="You are here:" role="navigation">
 
     </nav>
-    <h4>Edit  Boards </h4>
+    <h5>Edit  Boards </h5>
     {!! Form::model($board, array('method'=>'patch','route' => ['web_board_update',$board->id])) !!}
     {{ Form::label('board_name', 'Board Name:') }}
     {{ Form::text('name', null, array( 'class' => 'form-control', 'required' => '', 'maxlength' => '255'))   }}

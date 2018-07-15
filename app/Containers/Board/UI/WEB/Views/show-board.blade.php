@@ -3,7 +3,15 @@
    show board
 @endsection
 @section('content')
-    <h5>Board Details</h5>
+    <div class="grid-x">
+        <div class="medium-6">
+            <h5>Board Details</h5>
+        </div>
+        <div class="medium-6">
+            <a href="{{route('web_board_create')}}" class="button primary pull-right">Add Board Member</a>
+        </div>
+    </div>
+
     @isset($board)
         <table>
 

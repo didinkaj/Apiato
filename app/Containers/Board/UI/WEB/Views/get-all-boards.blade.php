@@ -10,7 +10,6 @@
         <div class="medium-6">
             <a href="{{route('web_board_create')}}" class="button primary pull-right">Add Board</a>
         </div>
-
     </div>
     @isset($boards)
 <table>
