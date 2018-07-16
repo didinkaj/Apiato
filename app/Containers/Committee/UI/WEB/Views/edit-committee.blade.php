@@ -4,6 +4,7 @@
 @endsection
 @section('content')
     <h5>Edit   Committee </h5>
+    <h5>Edit   Committee </h5>
     {!! Form::model($committee, array('method'=>'patch','route' => ['web_committee_update',$committee->id])) !!}
     {{ Form::label('board_name', 'Board Name:') }}
     {{ Form::text('name', null, array( 'class' => 'form-control', 'required' => '', 'maxlength' => '255'))   }}
